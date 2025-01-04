@@ -2,7 +2,7 @@ import React from 'react'
 import './Hero.css'
 import { GiForestCamp } from "react-icons/gi";
 import Text from '../../assets/Text.png'
-import AdvText from '../../assets/Adventure_camping_text.png'
+import AdvText from '../../assets/Adventure_Camping_text.png'
 
 function Hero() {
   return (
