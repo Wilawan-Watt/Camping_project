@@ -90,6 +90,10 @@ nav {
 
       a {
         color: #fff;
+        
+        &:hover {
+          border-bottom: 3px solid var(--brown-color);
+        }
       }
     }
 
