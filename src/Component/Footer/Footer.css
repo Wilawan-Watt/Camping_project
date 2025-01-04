@@ -1,0 +1,175 @@
+.footer_wrapper {
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../../assets/camping_view.png);
+  background-size: cover;
+
+  .footer_container {
+    margin: 80px 50px;
+    text-transform: capitalize;
+
+    .footer_top {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 250px;
+      }
+
+      .top_link {
+        display: flex;
+        margin: 0 200px;
+        font-weight: bold;
+        font-size: 20px;
+
+        svg {
+          font-size: 70px;
+          color: var(--green-color);
+        }
+
+        li {
+          margin: 10px 0;
+
+          a {
+            color: var(--green-color);
+
+            &:hover {
+              border-bottom: 3px solid var(--brown-color);
+            }
+          }
+        }
+
+        .link1,
+        .link2 {
+          margin-right: 80px;
+        }
+
+        .social {
+          margin: 10px 0;
+
+          h3 {
+            color: var(--green-color);
+          }
+
+          svg {
+            font-size: 25px;
+            margin: 10px 5px;
+          }
+        }
+      }
+    }
+
+    .footer_end {
+      text-align: center;
+      margin-top: 150px;
+      color: #fff;
+
+      svg {
+        font-size: 50px;
+      }
+
+      h3 {
+        font-size: 18px;
+      }
+
+      h4 {
+        margin-bottom: 20px;
+        font-size: 15px;
+      }
+
+      p {
+        margin: 10px 0;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .footer_wrapper {
+    height: auto;
+
+    .footer_container {
+      .footer_top {
+        flex-direction: column;
+
+        img {
+          width: 150px;
+        }
+
+        .top_link {
+          li {
+            margin: 0;
+          }
+
+          li {
+            margin: 20px 0;
+          }
+
+          .link1,
+          .link2,
+          .social {
+            margin: 20px 20px;
+          }
+
+          .social {
+            text-align: center;
+
+            h3 {
+              font-size: 20px;
+              margin: 20px 0;
+            }
+
+            svg {
+              margin-top: -5px;
+            }
+          }
+        }
+      }
+
+      .footer_end {
+        margin-top: 80px;
+      }
+    }
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  .footer_wrapper {
+    height: auto;
+
+    .footer_container {
+      .footer_top {
+        flex-direction: column;
+
+        .top_link {
+          margin-top: 20px;
+          .social {
+            text-align: center;
+
+            h3 {
+              font-size: 20px;
+              margin-bottom: 20px;
+            }
+
+            svg {
+              margin-top: -5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1025px) {
+  .footer_wrapper {
+    height: auto;
+
+    .footer_end {
+      margin: auto;
+    }
+  }
+}

@@ -1,0 +1,124 @@
+.about_wrapper {
+  overflow: hidden;
+  scroll-padding-top: 60px;
+  
+  .about_container {
+    max-width: 1000px;
+    margin: 80px auto;
+    text-align: center;
+
+    .about_info {
+      h1 {
+        text-transform: capitalize;
+        font-size: 100px;
+        font-weight: 900;
+        color: rgba(193, 204, 215, 0.4);
+      }
+
+      h3 {
+        text-transform: capitalize;
+        font-size: 35px;
+        font-weight: 800;
+        margin-top: -50px;
+      }
+
+      p {
+        max-width: 600px;
+        margin: 20px auto;
+      }
+
+      .about_item1 {
+        display: flex;
+        justify-content: center;
+
+        .about_list {
+          margin: 20px 30px;
+
+          img {
+            width: 80px;
+          }
+
+          h4 {
+            font-size: 30px;
+            font-weight: bold;
+          }
+
+          p {
+            font-size: 18px;
+            margin-top: 5px;
+            border-bottom: 3px solid var(--green-color);
+            text-transform: uppercase;
+          }
+        }
+      }
+
+      .about_item2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 40px 0;
+
+        .about_image {
+          img {
+            width: 300px;
+            border-radius: 10px;
+            object-fit: cover;
+          }
+
+          h4 {
+            font-size: 25px;
+            font-weight: bold;
+            text-transform: capitalize;
+          }
+
+          p {
+            margin-top: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .about_wrapper {
+    height: auto;
+    margin: 100px auto;
+    max-width: 300px;
+
+    .about_container {
+      margin: 0 auto;
+      
+      .about_info {
+        h1 {
+          font-size: 80px;
+          margin-bottom: 10px;
+        }
+
+        .about_item1, .about_item2 {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  .about_wrapper {
+    .about_container {
+      max-width: 700px;
+
+      .about_info {
+        .about_item2 {
+          gap: 5px;
+
+          .about_image {
+            img {
+              width: 220px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

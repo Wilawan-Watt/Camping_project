@@ -1,0 +1,106 @@
+.hero_container {
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../../assets/camper-enjoys-mountain-view-from-comfort-tent-with-hiking-boots-pointing-toward-horizon.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  position: relative;
+  z-index: -10;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+
+  .hero_info {
+    margin-right: 120px;
+    display: flex;
+    align-items: center;
+
+    .hero_textimg {
+      position: absolute;
+      top: 40px;
+      left: 50px;
+
+      img {
+        width: 500px;
+      }
+    }
+
+    .hero_text {
+      color: #fff;
+      text-align: end;
+
+      img {
+        width: 450px;
+      }
+
+      h2 {
+        text-transform: uppercase;
+        font-size: 40px;
+        max-width: 500px;
+        margin: 20px 0;
+      }
+
+      p {
+        text-transform: capitalize;
+        font-size: 28px;
+        font-weight: bold;
+        text-decoration: underline;
+        text-decoration-color: var(--brown-color);
+        text-underline-offset: 5px;
+
+        svg {
+          font-size: 50px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .hero_container {
+    .hero_info {
+      margin: auto;
+
+      .hero_textimg {
+        position: unset;
+
+        img {
+          width: 320px;
+        }
+      }
+
+      .hero_text {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  .hero_container {
+    .hero_info {
+      margin: auto;
+      flex-direction: column;
+
+      .hero_textimg {
+        position: unset;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1025px) {
+  .hero_textimg {
+    position: absolute;
+    top: 30% !important;
+  }
+
+  .hero_text {
+    position: absolute;
+    right: 100px;
+    top: 30%;
+  }
+}

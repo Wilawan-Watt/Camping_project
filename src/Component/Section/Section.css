@@ -1,0 +1,59 @@
+.section_wrapper {
+  overflow: hidden;
+  width: 100%;
+  height: 450px;
+  background-image: url(../../assets/reading_a_book_in_camp.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  .section_container {
+    display: flex;
+    justify-content: space-between;
+    margin: 200px 80px;
+
+    .text1,
+    .text2 {
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 60px;
+      font-weight: 800;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .section_wrapper {
+    height: auto;
+
+    .section_container {
+      flex-direction: column;
+
+      .text1,
+      .text2 {
+        position: relative;
+        bottom: -120px;
+        font-size: 40px;
+      }
+    }
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  .section_wrapper {
+    height: auto;
+
+    .section_container {
+      flex-direction: column;
+      position: relative;
+      bottom: -120px;
+    }
+  }
+}
+
+@media (min-width: 1025px) {
+  .section_container {
+    position: relative;
+   top: 80px;
+  }
+}
